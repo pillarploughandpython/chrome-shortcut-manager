@@ -1,0 +1,26 @@
+{
+   "background_page": "background.html",
+   "browser_action": {
+      "default_icon": "icon_19_19.png",
+      "default_title": "Shortcut Manager",
+      "popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "util.js", "i18n_light.js", "key_util.js", "data_format_light.js", "shortcut_manager.js" ],
+      "matches": [ "https://*/*", "http://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Customize shortcut keys; Assign any Javascript code or browser actions to any key strokes.",
+   "icons": {
+      "128": "icon_128_128.png",
+      "32": "icon_32_32.png",
+      "64": "icon_64_64.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDoIeAwaBGodL2uS6Lp6ypJAWJQbRbObcZTTxZeukRHHBfV+KpJRBMWiXG0lLW/V3lL2X5oKWbto2w9Jg7C6fpHBFCEhuEi8ByCQqKuYs+ekQlqJsuH34mNbsFAovIytTMjOS+Maca7MoRo5P400ueMdb6xYoLyroUZBbh8sWFOGwIDAQAB",
+   "name": "Shortcut Manager",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.7.9"
+}
