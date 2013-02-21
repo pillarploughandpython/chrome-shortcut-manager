@@ -458,7 +458,7 @@ var BROWSER_ACTIONS = [
   name: 'ScrollToBottom',
   i18n: 'Scroll to the bottom',
   func: function(tab) {
-    return 'window.scrollTo(0, 2147483647);';
+    return 'window.scrollBy(0, document.body.scrollHeight);';
   }
 }, {
   name: 'PageDown',
