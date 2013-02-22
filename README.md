@@ -4,7 +4,7 @@ Shortcut Manager is a Chrome extension for customizing shortcut keys. Forked fro
 
 ### Shortcuts
 
-Here is my common used shortcuts. You can import the contents in `shortcuts.js`.
+Here is my common used shortcuts. You can import the contents of `shortcuts.js` into the settings.
 
 * `Alt-l`: Select the right tab
 
